@@ -64,7 +64,6 @@ func (this *LinkedList) Reverse()  {
 func main() {
 	var l *LinkedList
 
-	//n7 := &ListNode{value:6,next:nil}
 	n5 := &ListNode{value:5,next:nil}
 	n4 := &ListNode{value:4,next:n5}
 	n3 := &ListNode{value:3,next:n4}
