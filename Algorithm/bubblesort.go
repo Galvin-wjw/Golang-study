@@ -1,8 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+	"math/rand"
+)
 
 func BubbleSort(a[] int) []int  {
+	start := time.Now()
+
 	n := len(a)
 	for i := 0; i < n - 1; i++{
 		var flag bool = false  //交换标志位
@@ -10,7 +16,7 @@ func BubbleSort(a[] int) []int  {
 			if a[j] > a[j+1] {
 				a[j],a[j+1] = a[j+1],a[j]
 				flag = true
-				fmt.Println(a)
+				//fmt.Println(a)
 			}
 		}
 		if (!flag) {
@@ -18,12 +24,22 @@ func BubbleSort(a[] int) []int  {
 		}
 	}
 
+	defer func() {
+		cost := time.Since(start)
+		fmt.Println("cost=", cost)
+	}()
 	return a
 }
 
 func main() {
-	var a = []int{3,5,4,6,77,3,4,5,5}
-	//var a = []int{1,2,3,4,5}
-	b := BubbleSort(a)
-	fmt.Println(b)
+	var a[] int
+	var i = 0
+	for i < 1000{
+		temp := rand.Intn(10000)
+		a = append(a, temp)
+		i++
+	}
+	fmt.Println(a)
+	//a := []int{3,2,4,8,1,2,5,7}
+	fmt.Println(BubbleSort(a))
 }
