@@ -5,7 +5,7 @@
 - 学习来源主要是极客时间的教程[数据结构与算法之美](https://time.geekbang.org/column/126)
 
 #### GobyExample
-- Go教程，同事推荐的，感觉非常实用 [GoByExampel](https://gobyexample.com/)
+- Go教程，同事推荐的，感觉非常实用 [GoByExample](https://gobyexample.com/)
 
 #### GolangProgram
 - 其他的一些Golang教程代码
