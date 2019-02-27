@@ -35,12 +35,11 @@ func InsertSort(a[] int) []int {
 func main() {
 	var a[] int
 	var i = 0
-	for i < 1000{
-		temp := rand.Intn(10000)
+	for i < 10000{
+		temp := rand.Intn(100000)
 		a = append(a, temp)
 		i++
 	}
-	fmt.Println(a)
 	//a := []int{3,2,4,8,1,2,5,7}
 	fmt.Println(InsertSort(a))
 }
