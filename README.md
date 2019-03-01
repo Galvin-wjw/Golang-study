@@ -1,3 +1,6 @@
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
+
+# Golang-study
 - 2019-学习Golang，顺便复习下大学的数据结构与算法
 - 不得不说，工作3年；再次拾起来数据结构与算法，理解了太多的东西；数据结构与算法真不愧是计算机软件的基石
 ---
